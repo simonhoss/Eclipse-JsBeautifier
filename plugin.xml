@@ -1,0 +1,39 @@
+
+<?eclipse version="3.4"?>
+<plugin>
+
+<extension
+		point="org.eclipse.ui.popupMenus">
+	<viewerContribution
+			id="JsBeautifier.contribution1"
+			targetID="#JavaScriptEditorContext">
+		<menu
+			id="JsBeautifier.menu1"
+			label="JSBeautifier"
+			path="additions">
+		</menu>
+		<action
+			class="jsbeautifier.popup.actions.NewAction"
+			id="JsBeautifier.newAction"
+			label="JSBeautifier"
+			menubarPath="JsBeautifier.menu1">
+		</action>
+	</viewerContribution>
+	<viewerContribution
+			id="JsBeautifier.contribution1"
+			targetID="#VjoEditorContext">
+		<menu
+			id="JsBeautifier.menu1"
+			label="JSBeautifier"
+			path="additions">
+		</menu>
+		<action
+			class="jsbeautifier.popup.actions.NewAction"
+			id="JsBeautifier.newAction"
+			label="JSBeautifier"
+			menubarPath="JsBeautifier.menu1">
+		</action>
+	</viewerContribution>
+</extension>
+
+</plugin>
