@@ -2,6 +2,6 @@ This is a plugin for Eclipse to make beautiful Javascript code using the library
 
 The plugin works currently with the native eclipse editor, the vjet editor and the sencha eclipse plugin.
 
-Download the latest release from the release folder.
+Download the latest release from https://github.com/feuersh/Eclipse-ExtExtender
 
 ![](https://raw.github.com/feuersh/Eclipse-JsBeautifier/master/img/jsbeautifier.png)
