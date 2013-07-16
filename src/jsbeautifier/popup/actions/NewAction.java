@@ -74,7 +74,7 @@ public class NewAction implements IObjectActionDelegate, IEditorActionDelegate {
 
 			fileData.append("\r\n\r\n");
 			text = doc.get();
-			text = text.replace("\"", "\\\"").replace("\'", "\\\'").replace("\n", "\\n").replace("\r", "\\r");
+			text = text.replace("\\", "\\\\").replace("\"", "\\\"").replace("\'", "\\\'").replace("\n", "\\n").replace("\r", "\\r");
 			fileData.append("js_beautify('"+text+"', { 'indent_size': 1, 'indent_char': '\t' });");
 
 			String beautifiedString = (String)engine.eval(fileData.toString());
